@@ -11,7 +11,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
+            { text: 'js', link: '/guide/' },
             {
                 text: 'Languages',
                 items: [
@@ -23,10 +23,17 @@ module.exports = {
         ],
         sidebarDepth: 2,
         sidebar: [{
-            title: 'Guide',
+            title: 'ojs',
             collapsable: false,
             children: ['/guide/']
-        }]
+        },
+        {
+            title: '异步编程方法',
+            collapsable: false,
+            children: ['/async/']
+        }
+    ],
+        lastUpdated: '上次更新时间'
     },
 
 }
