@@ -31,8 +31,24 @@ module.exports = {
             title: '异步编程方法',
             collapsable: false,
             children: ['/async/']
+        },
+
+        {
+            title: '正则',
+            collapsable: false,
+            children: ['/Reg/']
+        },
+        {
+            title: '奇技淫巧',
+            collapsable: false,
+            children: ['/DiabolicTricksAndWickedCraft/']
+        },
+        {
+            title: '建议',
+            collapsable: false,
+            children: ['/suggest/']
         }
-    ],
+        ],
         lastUpdated: '上次更新时间'
     },
 
