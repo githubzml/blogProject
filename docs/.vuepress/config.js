@@ -47,6 +47,21 @@ module.exports = {
             title: '建议',
             collapsable: false,
             children: ['/suggest/']
+        },
+        {
+            title: 'react',
+            collapsable: false,
+            children: ['/react/']
+        },
+        {
+            title: 'vue',
+            collapsable: false,
+            children: ['/vue/']
+        },
+        {
+            title: '插件',
+            collapsable: false,
+            children: ['/plugins/']
         }
         ],
         lastUpdated: '上次更新时间'

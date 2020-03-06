@@ -60,6 +60,38 @@ const isAnagram = (str1, str2) => {
 isAnagram('iceman', 'cinema'); // true
 ```
 
+## 10 How to get the current url
+
+``` js
+        const currentURL = () => window.location.href
+        console.log(currentURL()) //'https://google.com'
+```
+
+## 14 等待指定的时间后 调用提供的函数
+
+``` js
+        const delay = (fn, wait, ...args) => setTimeout(fn, wait, ...args);
+        delay(text => console.log(text), 1000, 'later wocao ');
+```
+
+## 发起get请求
+ 
+
+``` js
+        const httpGet = (url, callback, err = console.error) => {
+            const request = new XMLHttpRequest();
+            request.open('GET', url, true);
+            request.onload = () => callback(request.responseText);
+            request.onerror = () => err(request);
+            request.send();
+        };
+
+        httpGet(
+            'https://www.easy-mock.com/mock/5e40d0309d282806e0f9d458/ReactDemo1/cc',
+            console.log
+        );
+```
+
 [链接](https://juejin.im/post/5e55296ef265da57663fd49d)
 
         
